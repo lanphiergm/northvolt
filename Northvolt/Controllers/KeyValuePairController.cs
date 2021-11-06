@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Northvolt.Models;
-using System;
 using System.Collections.Generic;
 
 namespace Northvolt.Controllers
@@ -14,5 +13,8 @@ namespace Northvolt.Controllers
 
         [HttpPost]
         public string Add(string key, double value) => KeyValuePairModel.Add(key, value);
+
+        [HttpDelete]
+        public string Prune() => KeyValuePairModel.Prune();
     }
 }
