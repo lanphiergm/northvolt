@@ -13,6 +13,6 @@ namespace Northvolt.Controllers
         public IEnumerable<KeyValuePair<string, double>> Get() => KeyValuePairModel.GetList();
 
         [HttpPost]
-        public void Add(string key, double value) => KeyValuePairModel.Add(key, value);
+        public string Add(string key, double value) => KeyValuePairModel.Add(key, value);
     }
 }

@@ -207,7 +207,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/keyvaluepairs/dev/1636166635244-2021-11-06T02:43:55.244Z/bin/Release/netcoreapp3.1/hello.zip"
+          "S3Key": "serverless/keyvaluepairs/dev/1636201254130-2021-11-06T12:20:54.130Z/bin/Release/netcoreapp3.1/hello.zip"
         },
         "Handler": "Northvolt::Northvolt.LambdaEntryPoint::FunctionHandlerAsync",
         "Runtime": "dotnetcore3.1",
@@ -225,14 +225,14 @@
         "HelloLogGroup"
       ]
     },
-    "HelloLambdaVersion4LatmTKE0tdeYNwnpQ8GFDDsEDjrnZmx4AA68G9cMo": {
+    "HelloLambdaVersionisyXyA5WycCvTnM97xXA00jck4FmVwndvD54rtJHYd0": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "HelloLambdaFunction"
         },
-        "CodeSha256": "rEP6VmVRdfBZrMKUUbKfYzKmhgM2p1k0vMSYzgJZqQQ="
+        "CodeSha256": "6hEL/aSsoRwM2ig08b+7Y4gq2Y7VWLP7MUFx1CQLeq8="
       }
     },
     "CWLSubFilterHelloLogGroupUsEast1": {
@@ -269,7 +269,7 @@
     "HelloLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "HelloLambdaVersion4LatmTKE0tdeYNwnpQ8GFDDsEDjrnZmx4AA68G9cMo"
+        "Ref": "HelloLambdaVersionisyXyA5WycCvTnM97xXA00jck4FmVwndvD54rtJHYd0"
       },
       "Export": {
         "Name": "sls-keyvaluepairs-dev-HelloLambdaFunctionQualifiedArn"

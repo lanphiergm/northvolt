@@ -12,6 +12,16 @@ namespace Northvolt.Models
         public static IEnumerable<KeyValuePair<string, double>> GetList() => 
             _backingStore.Select(kvp => new KeyValuePair<string, double>(kvp.Key, kvp.Value.value));
 
-        public static void Add(string key, double value) => _backingStore.Add(key, (value, DateTime.Now));
+        public static string Add(string key, double value)
+        {
+            string response = "Key must be provided";
+            if (!string.IsNullOrEmpty(key))
+            {
+                var timestamp = DateTime.Now;
+                _backingStore[key] = (value, timestamp);
+                response = $"Added ({key}, {value}) at {timestamp}";
+            }
+            return response;
+        }
     }
 }
