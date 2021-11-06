@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "2a6212e2-8903-4ed8-8d8b-5cc2aabd7ecb",
+		"name": "KeyValuePair serverless",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Root",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://01waj3wsc5.execute-api.us-east-1.amazonaws.com/default/",
+					"protocol": "https",
+					"host": [
+						"01waj3wsc5",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"default",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List KVPs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://01waj3wsc5.execute-api.us-east-1.amazonaws.com/default/api/keyvaluepair",
+					"protocol": "https",
+					"host": [
+						"01waj3wsc5",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"default",
+						"api",
+						"keyvaluepair"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add KVP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://01waj3wsc5.execute-api.us-east-1.amazonaws.com/default/api/keyvaluepair?key=LifeTheUniverseAndEverything&value=42",
+					"protocol": "https",
+					"host": [
+						"01waj3wsc5",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"default",
+						"api",
+						"keyvaluepair"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "LifeTheUniverseAndEverything"
+						},
+						{
+							"key": "value",
+							"value": "42"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
